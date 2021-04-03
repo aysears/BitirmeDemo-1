@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BitirmeProjesiDemo</string>
+    <string-array name="title">
+        <item>Doctor</item>
+        <item>Patient</item>
+    </string-array>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="410dp"
+        android:layout_height="65dp"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_below="@id/etUsername"
+        android:layout_width="410dp"
+        android:layout_height="65dp"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+
+    <RadioGroup
+        android:id="@+id/rgType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/rbDoctor"
+            android:layout_width="410dp"
+            android:layout_height="65dp"
+            android:text="Doctor"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbPatient"
+            android:layout_width="410dp"
+            android:layout_height="65dp"
+            android:text="Patient"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_below="@id/rgType"
+        android:layout_width="410dp"
+        android:layout_height="65dp"
+        android:text="LOGIN" />
+
+    <TextView
+        android:id="@+id/tvRegisterHere"
+        android:layout_below="@id/bLogin"
+        android:layout_width="410dp"
+        android:layout_height="65dp"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="Register Here" />
+
+
+</RelativeLayout>

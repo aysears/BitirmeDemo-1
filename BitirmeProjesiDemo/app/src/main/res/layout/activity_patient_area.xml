@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientAreaActivity">
+    <TextView
+        android:id="@+id/tvUser"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:layout_width="410dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="User Information"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_below="@id/tvUser"
+        android:textSize="25sp"
+        android:layout_width="410dp"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/tvMail"
+        android:layout_below="@id/tvName"
+        android:textSize="25sp"
+        android:layout_width="410dp"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/tvBirthDate"
+        android:layout_below="@id/tvMail"
+        android:textSize="25sp"
+        android:layout_width="410dp"
+        android:layout_height="40dp" />
+    <Button
+        android:id="@+id/bOnOff"
+        android:layout_below="@id/tvBirthDate"
+        android:layout_width="410dp"
+        android:layout_height="40dp"
+        android:text="ON/OFF BLUETOOTH"/>
+    <Button
+        android:id="@+id/bEnDis"
+        android:layout_below="@id/bOnOff"
+        android:layout_width="410dp"
+        android:layout_height="40dp"
+        android:text="ENABLE DISCOVERABLE"/>
+    <Button
+        android:id="@+id/bDiscover"
+        android:layout_below="@id/bEnDis"
+        android:layout_width="410dp"
+        android:layout_height="40dp"
+        android:text="DISCOVER"/>
+
+    <ListView
+        android:id="@+id/lvDevices"
+        android:layout_below="@+id/bDiscover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/bGetData"
+        android:layout_width="410dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/lvDevices"
+        android:layout_marginTop="25dp"
+        android:text="GET DATA" />
+</RelativeLayout>

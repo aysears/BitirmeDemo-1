@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_below="@id/etName"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:hint="Username*" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_below="@id/etUsername"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:hint="E-mail*"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_below="@id/etEmail"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:hint="Password*"/>
+
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_below="@id/etPassword"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:hint="Confirm Password*"/>
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_below="@id/etConfirmPassword"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:hint="Phone Number"/>
+
+    <TextView
+        android:id="@+id/tvBirth"
+        android:layout_below="@id/etPhone"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="Birth Date:*"/>
+
+    <TextView
+        android:id="@+id/tvBirthDate"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/etPhone"
+        android:layout_marginLeft="160dp"
+        android:gravity="center"
+        android:hint="Click to Select"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_below="@id/tvBirthDate"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:hint="Address"/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/etAddress" />
+
+    <Button
+        android:id="@+id/bRegister"
+        android:layout_below="@id/spinner1"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:text="REGISTER" />
+
+    <Button
+        android:id="@+id/bBack"
+        android:layout_below="@id/bRegister"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:text="BACK" />
+</RelativeLayout>
